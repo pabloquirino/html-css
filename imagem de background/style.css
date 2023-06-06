@@ -4,15 +4,16 @@ body{
     height: 100vh; /* Altura do viewport '100' */
     background-color: black;
     background-image: url(imagens/wallpaper002.jpg); /* Imagem de fundo */
-    background-position: center top; /* Posição da imagem de fundo */
+    background-position: center center; /* Posição da imagem de fundo */
     background-repeat: no-repeat; /* Não repetir imagem */
     background-size: cover; /* Adapta a imagem de fundo 100% na tela, se ajustando conforme a responsividade */
+    background-attachment: fixed; /* Fixa imagem de fundo */
     
 }
 
 main{
     background-color: white;
-    width: 400px;
+    max-width: 700px; /*Responsivo*/
     padding: 15px;
     margin: auto;
     border: 2px solid blue;
