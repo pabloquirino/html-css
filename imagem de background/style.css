@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body{
+    height: 100vh; /* Altura do viewport '100' */
+    background-color: black;
+    background-image: url(imagens/wallpaper002.jpg); /* Imagem de fundo */
+    background-position: center top; /* Posição da imagem de fundo */
+    background-repeat: no-repeat; /* Não repetir imagem */
+    background-size: cover; /* Adapta a imagem de fundo 100% na tela, se ajustando conforme a responsividade */
+    
+}
+
+main{
+    background-color: white;
+    width: 400px;
+    padding: 15px;
+    margin: auto;
+    border: 2px solid blue;
+    border-radius: 20px;
+}
