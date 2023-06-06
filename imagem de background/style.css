@@ -8,14 +8,21 @@ body{
     background-repeat: no-repeat; /* Não repetir imagem */
     background-size: cover; /* Adapta a imagem de fundo 100% na tela, se ajustando conforme a responsividade */
     background-attachment: fixed; /* Fixa imagem de fundo */
-    
+
+    /*
+        SHORTHAND - BACKGROUND
+
+        color > image > position > repeat > [size] > attachment
+
+        'background: black, url(), center center, no-repeat, cover, fixed;'
+    */
 }
 
 main{
     background-color: white;
-    max-width: 700px; /*Responsivo*/
+    max-width: 400px; /*Responsivo*/
     padding: 15px;
-    margin: auto;
+    margin: auto; /* centralizar main */
     border: 2px solid blue;
     border-radius: 20px;
 }
