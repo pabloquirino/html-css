@@ -6,13 +6,16 @@
     <title>Tabelas grandes</title>
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif
+            font-family: Arial, Helvetica, sans-serif;
         }
 
        table {
             width: 400px;
             border-collapse: collapse;
+            text-align: center;
         }
+
+        
 
         td, th{
             border: 1px solid black;
@@ -20,22 +23,31 @@
         }
 
         caption{
+            font-weight: bolder;
             padding: 10px;
             background-color: rgba(168, 165, 165, 0.527);
             border: 1px solid black;
             font-size: 1.3em;
         }
 
-        thead{
-            background-color: rgb(170, 167, 167);
+        thead,  tfoot{
+            background-color: rgb(100, 99, 99);
             color: rgb(0, 0, 0);
         }
 
-        tfoot{
-            background-color: rgb(170, 167, 167);
+        /*
+        efeito zebrado 
+        ':nth-child(even)' -> par
+        ':nth-child(odd)' -> impar 
+        */
+        tbody > tr:nth-child(even){
+            background-color: rgb(209, 207, 207);
         }
 
-        
+        .num{
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
@@ -56,9 +68,8 @@
         <thead>
 
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px">População</th> <!-- Diminuir tamanho de tabelas a direita -->
             </tr>
 
         </thead>
@@ -66,30 +77,46 @@
         <tbody>
 
             <tr>
-                <td>01</td>
                 <td>Rio de Janeiro</td>
-                <td>200.000</td>
+                <td class="num">200.000</td>
             </tr> 
 
             <tr>
-                <td>03</td>
                 <td>São Paulo</td>
-                <td>1.000.000</td>
+                <td class="num">1.000.000</td>
             </tr>
 
             <tr>
-                <td>03</td>
                 <td>Espírito Santo</td>
-                <td>50.000</td>
+                <td class="num">50.000</td>
+            </tr> 
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">5230.000</td>
+            </tr> 
+
+            <tr>
+                <td>Ceará</td>
+                <td class="num">52340.000</td>
+            </tr> 
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">5120.000</td>
+            </tr> 
+
+            <tr>
+                <td> Goiás</td>
+                <td class="num">51230.000</td>
             </tr> 
 
         </tbody>
 
         <tfoot>
             <tr>
-                <th>//</th>
-                <th>Total de habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">000</td>
             </tr>      
         </tfoot>
     </table>
