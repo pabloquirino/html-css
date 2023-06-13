@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-size: 1.2em;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th{
+            background-color: gray;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células (horizontal)</h1>
+    <table>
+
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>País</th>
+                <th>População</th>
+            </tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Brasil</td>
+                <td class="num">1.000.000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Espanha</td>
+                <td class="num">1.500.000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Holanda</td>
+                <td class="num">3.000.000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="2">Total</th> 
+                <!--meclagem de células coluna(horizontal)-->
+
+                <td class="num">5.500.000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <br>
+    <br>
+
+    <h1>Mesclagem de células (vertical)</h1>
+    <table>
+
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+
+            <tr>
+                <td>d</td>
+                <td>e</td>
+                <td rowspan="2">f</td> 
+                <!--mesclagem de linha (vertical)-->
+            </tr>
+
+            <tr>
+                <td>g</td>
+                <td>h</td>
+            </tr>
+
+    </table>
+</body>
+</html>
