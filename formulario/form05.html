@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form autocomplete="off" action="cadastro.php" method="get">
+        <!-- Select -->
+      <p>
+        <label for="iest">Estado: </label>
+        <select name="est" id="iest">
+            <option value=""></option>
+            <option value="Rj">Rio de janeiro</option>
+            <option value="Sp">São Paulo</option>
+            <option value="Mg">Minas Gerais</option>
+        </select>
+      </p>
+
+      <!-- Datalist -->
+      <p>
+        <label for="iprof">Profissão: </label>
+        <input type="text" name="prof" id="iprof" list="lstprof"> <!-- tag list importante para funcionar -->
+        <datalist id="lstprof">
+            <option value="Empresário">rico</option>
+            <option value="Jogador de futebol">atleta</option>
+            <option value="Programador">semideus</option>
+        </datalist>
+      </p>
+
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </p>
+
+    </form>
+</body>
+</html>
