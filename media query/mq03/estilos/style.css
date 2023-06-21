@@ -35,11 +35,7 @@ h1{
     text-align: center;
 }
 
-img{
-    display: block;
-    margin: auto;
-}
-
+img#phone {display: block; margin: auto;}
 img#tablet {display: none;}
 img#print {display: none;}
 img#pc {display: none;}
