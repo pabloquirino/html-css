@@ -4,7 +4,7 @@
 
 
 /* (../) significa que precisa voltar uma pasta */
-body{
+body {
     background: url(../imagens/cev-landscape.jpg);
     background-position: left bottom;
     background-repeat: no-repeat;
